@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'LotteryTech Solutions',
+  title: 'Fortune360 Solutions',
   description: 'Providing cutting-edge lottery platform solutions',
 };
 
