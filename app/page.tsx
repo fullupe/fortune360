@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
-import { ArrowRight, Zap, Shield, TrendingUp } from 'lucide-react';
+import { ArrowRight, Zap, Shield, TrendingUp,  } from 'lucide-react';
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,16 +13,24 @@ export default function Home() {
           <div className="lg:w-1/2 mb-10 lg:mb-0">
             <h1 className="text-5xl font-bold mb-6">Revolutionize Your Lottery Business</h1>
             <p className="text-xl mb-8">Empower your lottery operations with cutting-edge technology solutions designed for the digital age.</p>
+            <Link href="/contact"> 
+            
             <Button size="lg" variant="secondary" className="mr-4">Get Started</Button>
+            </Link>
+
+            <Link href="/about">
+            
             <Button size="lg" variant="default">Learn More</Button>
+            </Link>
+
           </div>
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 z-5">
             <Image
               src="https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
               alt="Lottery Technology"
               width={600}
               height={400}
-              className="rounded-lg shadow-2xl"
+              className="rounded-lg shadow-2xl z-5"
             />
           </div>
         </div>
