@@ -1,7 +1,8 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { HandshakeIcon, BuildingIcon, GlobeIcon } from 'lucide-react';
+import { HandshakeIcon, BuildingIcon, GlobeIcon, } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
+import Link from 'next/link'
 
 export default function Partners() {
   const partners = [
@@ -41,7 +42,9 @@ export default function Partners() {
         <p className="text-xl mb-8">
           Interested in partnering with LotteryTech Solutions? Let's explore how we can work together.
         </p>
+        <Link href="/contact">
         <Button size="lg">Contact Us</Button>
+        </Link>
       </section>
     </div>
     </>

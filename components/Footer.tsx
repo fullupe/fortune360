@@ -23,7 +23,7 @@ export default function Footer() {
             <h4 className="text-md font-semibold mb-4">Contact</h4>
             <p className="text-sm">Tema  cmmunity-5, school Road, Gh</p>
             <p className="text-sm">Phone: +233 (24) 123-4567</p>
-            <p className="text-sm">Email: info@fortune360solutions.com</p>
+            <p className="text-sm">Email: info@fortune360ghana.com</p>
           </div>
           <div>
             <h4 className="text-md font-semibold mb-4">Follow Us</h4>

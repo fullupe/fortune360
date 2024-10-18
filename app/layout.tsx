@@ -1,10 +1,25 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+// import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+// import {Roboto} from "next/font/google"
+
+import localFont from "next/font/local"
+
+const myFont = localFont({
+  // src:'./static-fonts/CrimsonText-Bold.ttf',
+  src:'./static-fonts/CrimsonText-Regular.ttf',
+  display:"swap"
+})
+
+// const inter = Inter({ subsets: ['latin'] });
+// const roboto = Roboto({
+//   weight:["400","700"],
+//   subsets:['latin'],
+//   display:"swap"
+// })
 
 export const metadata: Metadata = {
   title: 'Fortune360 Solutions',
@@ -18,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={myFont.className}>
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
